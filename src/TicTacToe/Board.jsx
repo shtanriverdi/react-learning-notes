@@ -2,18 +2,27 @@ import { useState } from "react";
 import Square from "./Square";
 
 export default function Board() {
+  const [xIsNext, setXIsNext] = useState(true);
   const [squares, setSquares] = useState(Array(9).fill(null));
 
   const handleClick = (i) => {
-    // Alternative way
-    // const newSquares = [ ...squares ];
-    const newSquares = squares.slice();
-    newSquares[i] = 'X';
-    setSquares(newSquares);
+    if (!squares[i]) {
+      const newSquares = squares.slice();
+      // Alternative way
+      // const newSquares = [ ...squares ];
+      newSquares[i] = xIsNext ? "X" : "O";
+      setSquares(newSquares);
+      setXIsNext(!xIsNext);
+    }
+  };
+
+  const handleReset = () => {
+    setSquares(Array(9).fill(null));
   };
 
   return (
     <>
+      <button onClick={handleReset}>Reset Game</button>
       <div className="board-row">
         <Square value={squares[0]} onSquareClick={() => handleClick(0)} />
         <Square value={squares[1]} onSquareClick={() => handleClick(1)} />
