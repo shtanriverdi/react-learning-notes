@@ -1,10 +1,6 @@
-export default function Square({ value }) {
-  const handleClick = () => {
-    console.log(`Clicked`);
-  };
-
+export default function Square({ value, onSquareClick }) {
   return (
-    <button onClick={handleClick} className="square">
+    <button onClick={onSquareClick} className="square">
       {value}
     </button>
   );
