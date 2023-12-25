@@ -1,6 +1,9 @@
-export default function Square({ value, onSquareClick }) {
+export default function Square({ value, onSquareClick, color }) {
   return (
-    <button onClick={onSquareClick} className="square">
+    <button
+      style={{ color: color }}
+      onClick={onSquareClick}
+      className="square">
       {value}
     </button>
   );
