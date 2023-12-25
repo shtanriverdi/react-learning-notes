@@ -14,15 +14,24 @@ body {
   text-align: center;
 }
 
+.board-row {
+  display: flex;
+}
+
 .square {
   width: 150px;
   height: 150px;
   font-size: 4.5rem;
-  background-color: transparent;
+  background-color: rgb(243, 255, 234);
   text-align: center;
-  border: 0.04em black solid;
-  margin-top: -0.04em;
-  margin-right: -0.04em;
+  /* Important note here about negative margins:
+  - top/left, it pulls the element in that specified direction.
+  - bottom/right, it doesn’t move the element down/right as you might think.
+  Instead, it pulls any succeeding element into the main element, overlapping it.
+  */
+  border: 1px black solid;
+  margin-top: -1px;
+  margin-left: -1px;
   padding: 0;
   font-weight: bold;
 }
