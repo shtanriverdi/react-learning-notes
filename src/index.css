@@ -1,6 +1,28 @@
+* {
+  box-sizing: border-box;
+  user-select: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 body {
   height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.square {
+  width: 150px;
+  height: 150px;
+  font-size: 4.5rem;
+  background-color: transparent;
+  text-align: center;
+  border: 0.04em black solid;
+  margin-top: -0.04em;
+  margin-right: -0.04em;
+  padding: 0;
+  font-weight: bold;
 }

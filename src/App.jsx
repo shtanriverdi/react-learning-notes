@@ -1,5 +1,5 @@
-// import PassingStateDown from "./PassingStateDown";
-import TicTacToe from "./TicTacToe"
+// import PassingStateDown from "./QuickStart/PassingStateDown";
+import TicTacToe from "./TicTacToe/TicTacToe";
 
 export default function App() {
   return (
