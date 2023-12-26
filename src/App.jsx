@@ -1,9 +1,9 @@
 // import PassingStateDown from "./QuickStart/PassingStateDown";
-import TicTacToe from "./TicTacToe/TicTacToe";
+import Game from "./TicTacToe/Game";
 
 export default function App() {
   return (
     // <PassingStateDown />
-    <TicTacToe />
+    <Game />
   );
 }
