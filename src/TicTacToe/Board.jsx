@@ -40,6 +40,9 @@ export default function Board() {
     if (squares[i] || winner) {
       return;
     }
+    // Treating squares array as immutable
+    // This will allow you to store every past version of the squares array
+    // and navigate between the turns that have already happened.
     const newSquares = squares.slice();
     // Alternative way
     // const newSquares = [ ...squares ];
