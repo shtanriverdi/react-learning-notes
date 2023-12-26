@@ -2,6 +2,7 @@
   box-sizing: border-box;
   user-select: none;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: rgb(133, 133, 133);
 }
 
 body {
