@@ -26,6 +26,8 @@ export default function Board() {
       });
       setGameDone(false);
     }
+  } else if (!winner && !squares.some((cell) => cell === null)) {
+    status = "Game is a tie";
   } else {
     status = "Next player: " + getNextPlayer();
   }
