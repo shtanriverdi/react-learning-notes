@@ -1,9 +1,10 @@
 // import PassingStateDown from "./QuickStart/PassingStateDown";
-import Game from "./TicTacToe/Game";
+import FilterableProductTable from "./ThinkingInReact/FilterableProductTable";
 
 export default function App() {
   return (
     // <PassingStateDown />
-    <Game />
+    // <Game />
+    <FilterableProductTable />
   );
 }
