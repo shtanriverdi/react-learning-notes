@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Board from "./Board";
 import { calculateWinner } from "./Utils";
+import "./game.css";
 
 export default function Game() {
   // History State
