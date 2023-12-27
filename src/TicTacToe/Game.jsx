@@ -63,11 +63,13 @@ export default function Game() {
   const handleReset = () => {
     setGameDone(true);
     setWinnerColors(Array(9).fill("black"));
-    setHistory([Array(9).fill(null)]);
+    // setHistory([Array(9).fill(null)]); // TODO ? Problem
   };
 
   function jumpTo(nextMove) {
     setCurrentMove(nextMove);
+    setWinnerColors(Array(9).fill("black"));
+    setGameDone(true);
   }
 
   const moves = history.map((squares, index) => {
