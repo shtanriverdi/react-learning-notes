@@ -2,7 +2,6 @@
   box-sizing: border-box;
   user-select: none;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: rgb(133, 133, 133);
 }
 
 body {
@@ -30,18 +29,15 @@ body {
 }
 
 .game {
-  background-color: rgb(255, 234, 245);
   justify-content: space-evenly;
 }
 
 .game-board {
-  background-color: rgb(255, 234, 245);
   flex-direction: column;
 }
 
 .game-info {
-  background-color: rgb(255, 246, 234);
-
+  font-size: x-large;
 }
 
 .board-row {
