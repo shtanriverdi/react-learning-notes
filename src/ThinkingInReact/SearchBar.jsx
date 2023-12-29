@@ -1,9 +1,25 @@
-function SearchBar() {
+function SearchBar({
+  filterText,
+  inStockOnly,
+  onfilterTextChange,
+  onInStockOnlyChange,
+}) {
   return (
     <form className="container flex mb-10">
-      <input className="mb-5" type="text" placeholder="Search..." />
+      <input
+        value={filterText}
+        onChange={(event) => onfilterTextChange(event.target.value)}
+        className="mb-5"
+        type="text"
+        placeholder="Search..."
+      />
       <label>
-        <input type="checkbox" /> Only show products in stock
+        <input
+          onClick={(event) => onInStockOnlyChange(event.target.checked)}
+          type="checkbox"
+          checked={inStockOnly}
+        />{" "}
+        Only show products in stock
       </label>
     </form>
   );
