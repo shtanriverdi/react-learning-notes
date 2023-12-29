@@ -6,6 +6,11 @@ function ProductTable({ products, filterText, inStockOnly }) {
   let lastCategory = null;
 
   products.forEach((product) => {
+    // Includes Version
+    // if (product.name.toLowerCase().includes(filterText.toLowerCase()) === false) {
+    //   return;
+    // }
+
     // Contains Version
     if (product.name.toLowerCase().indexOf(filterText.toLowerCase()) === -1) {
       return;
