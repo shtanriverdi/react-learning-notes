@@ -13,6 +13,13 @@
   align-items: start;
 }
 
+.mb-5 {
+  margin-bottom: 5px;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
 
 /* justify-items has no effect on a flex-container,
 it’s used to distribute the elements in a grid container
