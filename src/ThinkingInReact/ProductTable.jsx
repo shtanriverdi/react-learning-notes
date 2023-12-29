@@ -6,6 +6,11 @@ function ProductTable({ products, filterText, inStockOnly }) {
   let lastCategory = null;
 
   products.forEach((product) => {
+    // Contains Version
+    if (product.name.toLowerCase().indexOf(filterText.toLowerCase()) === -1) {
+      return;
+    }
+
     // Put Product Categor Header
     if (product.category !== lastCategory) {
       rows.push(
@@ -16,14 +21,14 @@ function ProductTable({ products, filterText, inStockOnly }) {
       );
     }
 
-    if (product.name.toLowerCase().startsWith(filterText.toLowerCase())) {
-      if (inStockOnly && product.stocked) {
-        rows.push(<ProductRow key={product.name} product={product} />);
-      } else if (!inStockOnly) {
-        rows.push(<ProductRow key={product.name} product={product} />);
-      }
+    // Prefix Search Version
+    // if (product.name.toLowerCase().startsWith(filterText.toLowerCase())) {
+    // ...
+    if (inStockOnly && product.stocked) {
+      rows.push(<ProductRow key={product.name} product={product} />);
+    } else if (!inStockOnly) {
+      rows.push(<ProductRow key={product.name} product={product} />);
     }
-
 
     lastCategory = product.category;
   });

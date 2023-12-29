@@ -15,7 +15,7 @@ function SearchBar({
       />
       <label>
         <input
-          onClick={(event) => onInStockOnlyChange(event.target.checked)}
+          onChange={(event) => onInStockOnlyChange(event.target.checked)}
           type="checkbox"
           checked={inStockOnly}
         />{" "}
