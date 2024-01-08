@@ -4,7 +4,8 @@
 // import products from './ThinkingInReact/data';
 // import Gallery from "./DescribingTheUI/your-first-component/Gallery";
 // import { Profile } from "./DescribingTheUI/your-first-component/Gallery";
-import CurlyBraces from "./DescribingTheUI/JSXWithCurrlyBraces/Curly"
+// import CurlyBraces from "./DescribingTheUI/JSXWithCurrlyBraces/Curly"
+import PassProps from "./DescribingTheUI/passing-props-to-a-component/PassProps"
 
 export default function App() {
   return (
@@ -14,7 +15,8 @@ export default function App() {
     <>
       {/* <Gallery /> */}
       {/* <Profile /> */}
-      <CurlyBraces />
+      {/* <CurlyBraces /> */}
+      <PassProps />
     </>
   );
 }
