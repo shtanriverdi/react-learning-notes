@@ -1,4 +1,21 @@
-function Avatar({ person, size }) {
+function Profile(props) {
+  return (
+    // <div className="card">
+    //   <Avatar
+    //     person={person}
+    //     size={size}
+    //     isSepia={isSepia}
+    //     thickBorder={thickBorder}
+    //   />
+    // </div>
+    <div className="card">
+      {/* Forwarding props with the JSX spread syntax */}
+      <Avatar {...props} />
+    </div>
+  );
+}
+
+function Avatar({ person, size = 100 }) {
   return (
     <img
       src={"https://i.imgur.com/" + person.imageId + ".jpg"}
@@ -32,7 +49,7 @@ export default function PassProps() {
           name: "Lin Lanying",
           imageId: "1bX5QH6",
         }}
-      />{" "}
+      />
     </>
   );
 }
