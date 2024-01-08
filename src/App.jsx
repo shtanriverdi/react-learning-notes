@@ -5,7 +5,8 @@
 // import Gallery from "./DescribingTheUI/your-first-component/Gallery";
 // import { Profile } from "./DescribingTheUI/your-first-component/Gallery";
 // import CurlyBraces from "./DescribingTheUI/JSXWithCurrlyBraces/Curly"
-import PassProps from "./DescribingTheUI/passing-props-to-a-component/PassProps"
+// import PassProps from "./DescribingTheUI/passing-props-to-a-component/PassProps"
+import NestingComponents from "./DescribingTheUI/passing-props-to-a-component/NestingComponents"
 
 export default function App() {
   return (
@@ -16,7 +17,8 @@ export default function App() {
       {/* <Gallery /> */}
       {/* <Profile /> */}
       {/* <CurlyBraces /> */}
-      <PassProps />
+      {/* <PassProps /> */}
+      <NestingComponents />
     </>
   );
 }
