@@ -31,6 +31,7 @@ export default function NestingComponents() {
           imageId: 'YfeOqp4'
         }}
       />
+      <h1>Deneme</h1>
     </Card>
   );
 }
