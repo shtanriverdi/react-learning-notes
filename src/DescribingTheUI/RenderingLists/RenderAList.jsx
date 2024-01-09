@@ -12,7 +12,6 @@ const recipes = [{
   ingredients: ['chickpeas', 'olive oil', 'garlic cloves', 'lemon', 'tahini']
 }];
 
-
 export default function RecipeList() {
   /**
    * Use a key right after each map or a listing line!
