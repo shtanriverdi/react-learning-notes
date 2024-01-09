@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 const poem = {
   lines: [
     'I write, erase, rewrite',
@@ -26,7 +27,7 @@ export default function Poem() {
  *  so you’d have to write <Fragment> explicitly: */
 import { Fragment } from 'react';
 
-function Poem() {
+function Poem2() {
   return (
     <article>
       {poem.lines.map((line, index) => {

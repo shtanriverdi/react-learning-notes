@@ -6,7 +6,14 @@
 // import { Profile } from "./DescribingTheUI/your-first-component/Gallery";
 // import CurlyBraces from "./DescribingTheUI/JSXWithCurrlyBraces/Curly"
 // import PassProps from "./DescribingTheUI/passing-props-to-a-component/PassProps"
-import NestingComponents from "./DescribingTheUI/passing-props-to-a-component/NestingComponents"
+// import NestingComponents from "./DescribingTheUI/passing-props-to-a-component/NestingComponents"
+
+/**
+ * Remember that React does not guarantee that
+ * component functions will execute in any particular order,
+ * so you can’t communicate between them by setting variables.
+ * All communication must happen through props.
+ */
 
 export default function App() {
   return (
@@ -18,7 +25,7 @@ export default function App() {
       {/* <Profile /> */}
       {/* <CurlyBraces /> */}
       {/* <PassProps /> */}
-      <NestingComponents />
+      {/* <NestingComponents /> */}
     </>
   );
 }
