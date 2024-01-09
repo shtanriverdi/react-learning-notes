@@ -1,5 +1,6 @@
 import { recipes } from "./data.js";
 
+// eslint-disable-next-line no-unused-vars
 function Recipe({ id, name, ingredients }) {
   const listItems = ingredients.map((ingredient) => (
     <li key={ingredient}>{ingredient}</li>
