@@ -7,7 +7,6 @@ function getImageUrl(imageId, size = 's') {
   );
 }
 
-
 function Profile({
   imageId,
   name,
