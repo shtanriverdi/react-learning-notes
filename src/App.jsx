@@ -7,6 +7,7 @@
 // import CurlyBraces from "./DescribingTheUI/JSXWithCurrlyBraces/Curly"
 // import PassProps from "./DescribingTheUI/passing-props-to-a-component/PassProps"
 // import NestingComponents from "./DescribingTheUI/passing-props-to-a-component/NestingComponents"
+import Events from "./AddingInteractivity/Events"
 
 /**
  * Remember that React does not guarantee that
@@ -26,6 +27,7 @@ export default function App() {
       {/* <CurlyBraces /> */}
       {/* <PassProps /> */}
       {/* <NestingComponents /> */}
+      <Events />
     </>
   );
 }
