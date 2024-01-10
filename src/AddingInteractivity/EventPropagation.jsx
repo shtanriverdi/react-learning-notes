@@ -7,6 +7,23 @@
  * which only works on the JSX tag you attach it to.
  */
 
+function SignupForm() {
+  return (
+    <form onSubmit={(e) => {
+    /*
+      Don’t confuse e.stopPropagation() and e.preventDefault().
+      They are both useful, but are unrelated:
+      "e.stopPropagation()" stops the event handlers attached to the tags above from firing.
+      "e.preventDefault()" prevents the default browser behavior for the few events that have it. 
+      */
+      e.preventDefault(); // Stops refreshing the page after submit
+    }}>
+      <input />
+      <button>Send</button>
+    </form>
+  );
+}
+
 function Button({ onClick, children }) {
   return (
     <button
@@ -29,6 +46,7 @@ export default function EventPropagation() {
       <Button onClick={() => alert("Upload Image")}>
         Upload Image
       </Button>
+      <SignupForm />
     </div>
   );
 }
