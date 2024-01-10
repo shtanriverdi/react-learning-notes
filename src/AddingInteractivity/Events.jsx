@@ -1,8 +1,15 @@
 export default function Events() {
+  // Event handler function
+  // Have names that start with handle, followed by the name of the event.
+  const handleClick = (message) => {
+    alert(message);
+  }
+
   return (
     <Toolbar
-      onPlayMovie={() => alert('Playing Movie...')}
-      onLoadImage={() => alert('Loading Image...')}
+      // Functions passed to event handlers must be passed, not called.
+      onPlayMovie={() => handleClick('Playing Movie...')}
+      onLoadImage={() => handleClick('Loading Image...')}
     />
   );
 }
