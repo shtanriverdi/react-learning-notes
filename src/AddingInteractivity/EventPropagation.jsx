@@ -9,15 +9,18 @@
 
 function SignupForm() {
   return (
-    <form onSubmit={(e) => {
-    /*
+    <form
+      onClick={(e) => e.stopPropagation()}
+      onSubmit={(e) => {
+        /*
       Don’t confuse e.stopPropagation() and e.preventDefault().
       They are both useful, but are unrelated:
       "e.stopPropagation()" stops the event handlers attached to the tags above from firing.
       "e.preventDefault()" prevents the default browser behavior for the few events that have it. 
       */
-      e.preventDefault(); // Stops refreshing the page after submit
-    }}>
+        e.stopPropagation(); // This has no effect on either input or button!
+        e.preventDefault(); // Stops refreshing the page after submit
+      }}>
       <input />
       <button>Send</button>
     </form>
@@ -40,12 +43,8 @@ function Button({ onClick, children }) {
 export default function EventPropagation() {
   return (
     <div onClick={() => alert("Div")}>
-      <Button onClick={() => alert("Play Movie")}>
-        Play Movie
-      </Button>
-      <Button onClick={() => alert("Upload Image")}>
-        Upload Image
-      </Button>
+      <Button onClick={() => alert("Play Movie")}>Play Movie</Button>
+      <Button onClick={() => alert("Upload Image")}>Upload Image</Button>
       <SignupForm />
     </div>
   );
