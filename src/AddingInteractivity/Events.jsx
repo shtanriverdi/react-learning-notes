@@ -27,6 +27,8 @@ function Toolbar({ onPlayMovie, onLoadImage }) {
   );
 }
 
+// By convention, event handler props should start with "on", followed by a capital letter.
+// onSomethingAction
 function Button({ onClick, children }) {
   return (
     <button onClick={onClick}>
